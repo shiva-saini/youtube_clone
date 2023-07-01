@@ -71,7 +71,7 @@ function openVideoDetails(videoId){
 
 
 // getVideoDetails(id)
-getVideos("","videos",20);
+getVideos("","videos",21);
 
 
 let categories = document.getElementById('categories');

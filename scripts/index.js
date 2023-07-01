@@ -1,6 +1,6 @@
 
 let BASE_URL = "https://www.googleapis.com/youtube/v3";
-let API_KEY = "AIzaSyAD8ZUkH4kBJKq6ThDmLTnsHDV8TsYbEY0";
+let API_KEY = "AIzaSyARQXCJLYcUN9EoBboizgy6TPmhYtcaFbY";
 
 
 
@@ -9,7 +9,7 @@ async function getVideos(q,type,maxResults){
    let url  = `${BASE_URL}/search?key=${API_KEY}&q=${q}&type=${type}&maxResults=${maxResults}`;
    let response = await fetch(url);
    let data = await response.json();
-//    console.log(data)
+   console.log(data)
    let videos = data.items;
    getAllVideos(videos);
    console.log(videos)
